@@ -207,24 +207,21 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
 
 ```yaml
 menu:
-  Index:
+  Início:
     url: /
     icon: fas fa-home
   Tags:
     url: /tags
     icon: fas fa-tags
-  Categories:
+  Categorias:
     url: /categories
     icon: fas fa-bookmark
-  Archives:
+  Postagens:
     url: /archives
     icon: fas fa-archive
-  About:
+  Sobre:
     url: /about
     icon: fas fa-user-circle
-  Friends:
-    url: /friends
-    icon: fas fa-address-book
 ```
 
 #### 二级菜单配置方法
@@ -247,8 +244,8 @@ menu:
   Categories:
     url: /categories
     icon: fas fa-bookmark
-  Archives:
-    url: /archives
+  Postagens:
+    url: /postagens
     icon: fas fa-archive
   About:
     url: /about
@@ -431,7 +428,7 @@ translate:
 
 ```html
 <% if (theme.socialLink.github) { %>
-    <a href="<%= theme.socialLink.github %>" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="<%= theme.socialLink.github %>" class="tooltipped" target="_blank" data-tooltip="GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 <% } %>
@@ -656,7 +653,7 @@ tags:
 ```css
 /* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色. */
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #4cbf30 0%, #DB7093 100%);
 }
 
 @-webkit-keyframes rainbow {

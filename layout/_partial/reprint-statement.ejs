@@ -3,7 +3,7 @@ let reprintPolicyEnabled = theme.reprint && theme.reprint.enable;
 let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
 %>
 <% if (reprintPolicyEnabled) { %>
-    <div class="reprint" id="reprint-statement">
+    <!-- <div class="reprint" id="reprint-statement">
         <% if (reprintPolicy === 'cc_by') { %>
             <div class="reprint__author">
                 <span class="reprint-meta" style="font-weight: bold;">
@@ -243,7 +243,7 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by';
             </span>
             <%= __('payreprint') %>
         <% } %>
-    </div>
+    </div> -->
 
     <script async defer>
       document.addEventListener("copy", function (e) {
